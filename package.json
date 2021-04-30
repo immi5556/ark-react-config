@@ -1,10 +1,10 @@
 {
   "name": "ark-react-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "read global config &amp; make it available with in components",
   "author": "Immanuel Developer",
   "license": "MIT",
-  "repository": "https://github.com/immi5556/immanuel.npm/tree/master/Immanuel.a7.npm/Immanuel.ark.ReactLib/ark-react-config/ark-react-config",
+  "repository": "https://github.com/immi5556/ark-react-config",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

@@ -1,0 +1,12 @@
+
+react lib:
+  https://www.npmjs.com/package/create-react-library
+
+  to deploy github pages
+  > npm run deploy
+
+  https://immi5556.github.io/ark-react-config/
+
+
+to publish to npm
+> npm publish

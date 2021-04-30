@@ -1,8 +1,8 @@
 # ark-react-config
 
-> read global config &amp; make it available with in components
+> This a simple react library to read global variable values with in components
 
-[![NPM](https://img.shields.io/npm/v/ark-react-config.svg)](https://www.npmjs.com/package/ark-react-config) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Generic badge](https://img.shields.io/badge/npm-ark--react--config-green)](https://www.npmjs.com/package/ark-react-config/)
 
 ## Install
 
@@ -10,17 +10,19 @@
 npm install --save ark-react-config
 ```
 
+[Demo Link](https://immi5556.github.io/ark-react-config/ "Demo Link")
+
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'ark-react-config'
-import 'ark-react-config/dist/index.css'
+import { ArkConfig } from 'ark-react-config'
 
 class Example extends Component {
+  readGlobalProp(){
+    ArkConfig.get('obj.two.two');
+  }
   render() {
-    return <MyComponent />
+    return <div> Component content here </div>
   }
 }
 ```
