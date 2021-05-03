@@ -1,14 +1,18 @@
 import 'react';
 
 var arkw = window;
-const ArkConfig = (() => {
-  const get = key => (key || '').split('.').reduce((p, c) => p && p[c] || null, arkw);
+var ArkConfig = function () {
+  var get = function get(key) {
+    return (key || '').split('.').reduce(function (p, c) {
+      return p && p[c] || null;
+    }, arkw);
+  };
 
-  const set = (key, val) => {
+  var set = function set(key, val) {
     var lst = (key || '').split('.');
     if (!lst.length) return;
     var cur = arkw;
-    lst.forEach((t, idx) => {
+    lst.forEach(function (t, idx) {
       cur[t] = cur[t] || {};
 
       if (idx == lst.length - 1) {
@@ -24,7 +28,7 @@ const ArkConfig = (() => {
     get: get,
     set: set
   };
-})();
+}();
 
 export { ArkConfig };
 //# sourceMappingURL=index.modern.js.map
