@@ -10,3 +10,7 @@ react lib:
 
 to publish to npm
 > npm publish
+
+
+---to create npm package
+> npm pack
